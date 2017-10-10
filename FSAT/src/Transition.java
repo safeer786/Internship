@@ -5,15 +5,28 @@ public class Transition implements Comparable{
 	public String value;
 	public String state;
 	public double cost;
-		Transition(String v,String s,double c)
+	public String change;
+	public int up;
+		Transition(String v,String s,double c,String cha,int u)
 		{
 			value=v;
 			state=s;
 			cost=c;
+			change=cha;
+			up=u;
+		}
+		Transition(Transition t)
+		{
+			value=t.value;
+			state=t.state;
+			cost=t.cost;
+			change=t.change;
+			up=t.up;
 		}
 		void Print()
 		{
-			System.out.println("Value = "+this.value+" State = "+this.state + " Cost = "+ this.cost);
+			if(up==0)
+			{System.out.println("Value = "+this.value+" State = "+this.state + " Cost = "+ this.cost +"Change = "+this.change );}
 		}
 		String get(String v)
 		{
@@ -36,7 +49,7 @@ public class Transition implements Comparable{
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Transition t=null;
-		t=new Transition("a","b",0.2);
+		t=new Transition("a","b",0.2,"b",0);
 		t.Print();
 	}
 	public int compareTo(Object arg0) {

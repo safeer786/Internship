@@ -6,15 +6,25 @@ public class Trans {
 	int size=0;
 	List<State> all=new ArrayList<State>();
 	List<String> allnames=new ArrayList<String>();
-	void Add(String istate,String value,String ostate,Double cost)
+	void Add(String istate,String value,String ostate,Double cost,String cha)
 	{
+		int up;
+		if(value.equals(cha))
+		{
+			up=0;
+		}
+		else
+		{
+			up=1;
+		}
+	
 			if(!allnames.contains(istate) && !allnames.contains(ostate))
 			{
 				State i=new State();
 			
 				State o=new State();			
 				i.isfinal=false;
-				Transition t=new Transition(value,ostate,cost);
+				Transition t=new Transition(value,ostate,cost,cha,up);
 				i.transitions.add(t);
 				i.name=istate;
 				o.name=ostate;
@@ -35,7 +45,7 @@ public class Trans {
 				index2=allnames.indexOf(ostate);
 				i=all.get(index1);
 				o=all.get(index2);
-				Transition t=new Transition(value,ostate,cost);
+				Transition t=new Transition(value,ostate,cost,cha,up);
 				i.transitions.add(t);
 				i.link.add(o);
 			}
@@ -47,7 +57,7 @@ public class Trans {
 				o.name=ostate;
 				index=allnames.indexOf(istate);
 				i=all.get(index);
-				Transition t=new Transition(value,ostate,cost);
+				Transition t=new Transition(value,ostate,cost,cha,up);
 				i.transitions.add(t);
 				i.link.add(o);
 				allnames.add(ostate);
@@ -62,7 +72,7 @@ public class Trans {
 				index=allnames.indexOf(ostate);
 				o=all.get(index);
 				i.name=istate;
-				Transition t=new Transition(value,ostate,cost);
+				Transition t=new Transition(value,ostate,cost,cha,up);
 				i.transitions.add(t);
 				i.link.add(o);
 				allnames.add(istate);
@@ -87,7 +97,7 @@ public class Trans {
 		State current=new State();
 		int index;
 		String name;
-		Transition temp=new Transition("","",0.0);
+		Transition temp=new Transition("","",0.0,"",0);
 		index=allnames.indexOf("q1");
 		q1=all.get(index);
 		int size=word.length();
@@ -97,25 +107,33 @@ public class Trans {
 		{
 			return false;
 		}
-		for(int i=0;i<for1.size();i++)
+		else
 		{
-			temp=for1.get(i);
+			temp=for1.get(0);
 			name=temp.state;
 			index=allnames.indexOf(name);
 			current=all.get(index);
+			helper(current,word.substring(1, word.length()));
 		}
 
 		return true;
 	}
-	void helper(State current,String word)
+	State helper(State current,String word)
 	{
 		List<Transition> for1=new ArrayList<Transition>();
-		Transition temp=new Transition("","",0.0);
+		Transition temp=new Transition("","",0.0,"",0);
 		String name;
 		int index;
 		State traverse=new State();
 		for1=current.mixcost(Character.toString(word.charAt(0)));
 		//agar yar traverse ki state koi ho jo ja rahi ho last char pa tu best hai easy true kar da
+		if(for1.size()==0)
+		{
+			current=null;
+			System.out.println("does not exists");
+			return null;
+		}
+			
 		for (int i=0;i<word.length();i++)
 		{
 			for(int j=0;j<for1.size();j++)
@@ -128,6 +146,17 @@ public class Trans {
 				
 			}
 		}
+		return current;
+	}
+	State helper1(State current,String word)
+	{
+		List<Transition> for1=new ArrayList<Transition>();
+		Transition temp=new Transition("","",0.0,"",0);
+		String name;
+		int index;
+		State traverse=new State();
+		for1=current.mixcost(Character.toString(word.charAt(0)));
+		return current;
 	}
 //	void Print()
 //	{
@@ -144,7 +173,7 @@ public class Trans {
 	void Print ()
 	{
 		State temp=new State();
-		Transition temp1=new Transition("","",0.0);
+		Transition temp1=new Transition("","",0.0,"",0);
 		for(int i=0;i<size;i++)
 		{
 			temp=all.get(i);
@@ -155,14 +184,22 @@ public class Trans {
 			}
 		}
 	}
+	void up(String word)
+	{
+	  //for
+	}
+	void down(String word)
+	{
+		
+	}
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Trans t=new Trans();
-		t.Add("q1","a", "q2", 0.4);
-		t.Add("q1", "a", "q2", 0.2);
-		t.Add("q2", "b", "q1", 0.2);
-		t.Add("q2", "b", "q2", 0.2);
-		t.Print();
+		t.Add("q1","a", "q2", 0.4,"");
+		t.Add("q1", "a", "q2", 0.2,"");
+		t.Add("q2", "b", "q1", 0.2,"");
+		t.Add("q2", "b", "q2", 0.2,"");
+	//	t.Print();
 		for(int i=0;i<t.all.size();i++)
 		{
 			System.out.println(t.all.get(i).name);
