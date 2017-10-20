@@ -45,7 +45,7 @@ public class State {
 				return tran;
 			}
 		}
-		return tran;
+		return null;
 	}
 		
 	public static void main(String[] args) {
