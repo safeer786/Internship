@@ -132,31 +132,36 @@ public class Trans {
 		int size=word.length();
 		List<Transition> for1=new ArrayList<Transition>();
 		for1=possible_Transitions(q1, word);
-			temp=q1.min(Character.toString(word.charAt(0)));
+			//temp=q1.min(Character.toString(word.charAt(0)));
 			if(for1==null)
 			{
+				System.out.println("Exist");
 				System.out.println("Does not Exists");
 				return false;
 			}
-			name=temp.state;
-			index=allnames.indexOf(name);
-			current=all.get(index);
-			if(current==null)
+			for(int i=0;i<for1.size();i++)
 			{
-				System.out.println("Does not exist");
-				return false;
+				temp=for1.get(i);
+				name=temp.state;
+				index=allnames.indexOf(name);
+				current=all.get(index);
+			
+			if(current!=null)
+			{
+				for(int j=temp.value.length();j<word.length();j++)
+				{
+					
+					current=helper1(current,word.substring(j, word.length()));
+					if(current==null)
+					{
+						System.out.println("Does not exist");
+						return false;
+					}
+				}
+			}	
 			}
 		//	helper(current,word.substring(1, word.length()));
-			for(int i=1;i<word.length();i++)
-			{
-				
-				current=helper1(current,word.substring(i, word.length()));
-				if(current==null)
-				{
-					System.out.println("Does not exist");
-					return false;
-				}
-			}
+			
 	//	}
 			if(current.isfinal==true)
 			{
@@ -177,6 +182,7 @@ public class Trans {
 		State traverse=new State();
 	//	for1=current.mixcost(Character.toString(word.charAt(0)));
 		temp=current.min(Character.toString(word.charAt(0)));
+		System.out.println("Exist");
 		if(temp==null)
 		{
 			current=null;
@@ -220,11 +226,11 @@ public class Trans {
 	//--------------------------------------------------------------------------------------------
 	List<String>  upfinal(String word)
 	{
-//		if (exists(word)==false)
-//		{
-//			
-//			return null;
-//		}
+		if (exists(word)==false)
+		{
+			
+			return null;
+		}
 		State q= new State();
 		int indexf=0;
 		int word_size=word.length();
