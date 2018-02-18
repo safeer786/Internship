@@ -189,7 +189,7 @@ public class Trans {
 		q = all.get(index);
 		Transition t = new Transition("", "", 0.0, "", 0);
 		List<Transition> temp = new ArrayList<Transition>();
-		temp = possible_Transitions(q, word);
+		temp = best_possible_Transitions(q, word);
 		// if first state itself does not contain any tag
 		if (temp == null) {
 			return null;
@@ -347,8 +347,7 @@ public class Trans {
 				}
 				output.clear();
 				c_output.clear();
-				temp = possible_Transitions(q,
-						word.substring(final_output.get(i).length(), word_size));
+				temp = best_possible_Transitions(q,word.substring(final_output.get(i).length(), word_size));
 				if (temp != null) {
 					for (int j = 0; j < temp.size(); j++) {
 						temp1.add(temp.get(j));
@@ -360,6 +359,7 @@ public class Trans {
 					s.push(ss);
 					s1.push(ss1);
 				}
+				
 			}
 			int k = s.size();
 			if (k != 0) {
@@ -408,7 +408,27 @@ public class Trans {
 
 		return send;
 	}
+	
+	List<Transition> best_possible_Transitions(State q, String word) {
+		List<Transition> send = new ArrayList<Transition>();
+		Transition t = new Transition("", "", 0.0, "", 0);
+		for (int i = word.length();i>=0; i--) {
+			t = q.min(word.substring(0, i));
+			if (t != null) {
+					send.add(t);
+					break;
+				
+			} else {
+				t = new Transition("", "", 0.0, "", 0);
+			}
 
+		}
+		if (send.size() == 0) {
+			return null;
+		}
+
+		return send;
+	}
 	List<String> update_final(List<String> final_output, List<String> output,
 			int index) {
 		List<String> temp = new ArrayList<String>();
@@ -509,8 +529,8 @@ public class Trans {
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
 		Trans t = new Trans();
-		t.Add("q1", "lark", "q2", 0.0, "+noun+");
-		t.Add("q2", "a", "q21", 0.0, "+male+");
+		t.Add("q1", "لڑک", "q2", 0.0, "+noun+");
+		t.Add("q2", "ا", "q21", 0.0, "+male+");
 		t.Add("q2", "i", "q22", 0., "+female+");
 		t.Add("q2", "e", "q23", 0.0, "+male prular+");
 		t.Add("q2", "yan", "q24", 0., "+female prular+");
@@ -530,8 +550,8 @@ public class Trans {
 		finalstates.add("q2");
 		t.final_states(finalstates);
 		List<String> outp = new ArrayList<String>();
-		String sentence = ("larki");
-		boolean test= t.exists("larki");
+		String sentence = ("لڑکا");
+		boolean test= t.exists("لڑکا");
 		System.out.println(test);
 		String[] words = sentence.split("\\s+");
 		for (int j = 0; j < words.length; j++) {
