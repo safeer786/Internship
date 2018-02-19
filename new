@@ -8,4 +8,6 @@ These results can be explained by Iterated Best Response(IBR).
 IBR have two assumptions:
 1) There are focal points in the presentation of game that attract the attention of the reasoners before they engage in the further streagic delibration.
 2) They compute best response to focal point behaviour (if they can) to which they compute best respone and so on.
+So coming back to our example the hider might anticipate that this door is unique lets put in this but he would anticipate that hider might think the same so he does not mark this and chooses an other door but then he thinks that hider might think the samething so he should choose the same door. This will eventually end by in a reasoning loop.
+Semantic meaning as a focal point:
 
