@@ -15,17 +15,171 @@ Schelling idea was that independent coordinates choices will have a scilent opti
 then it is not fairly natural to assume butemprically supported that they will coordinate on choices which are psycologically scilent which in this case would be Grand Central Terminal in Manhatten.
 what counts as psycologically scilent under which cercumstance is seperate interesting and empirial question.
 Focality of Strating point of delibration:
-The role of focal points in an
-ibr model is slightly different though. First of all, focality in the ibr model is
-not a second-order selection criterion on top of standard equilibrium notions.
-Similarly, whereas Schelling’s focal points are what most people would expect
-to be a commonly expected coordination point, focal points in the ibr model
-are not —in a manner of speaking— the outcome of reasoning about a game
-situation but rather the starting point. Focal point reasoning in ibr is also not
+The role of focal points in an ibr model is different.
+focal points in the ibr model are the reasoning about starting point. Focal point reasoning in ibr is also not
 confined to coordination games, as the above ‘hide-and-seek’ game illustrates:
 reasoners might convince themselves that playing a focal strategy is not a good
 idea. In other words, reasoners may reason themselves away from focality,
-rather than being attracted by it through or after deliberation. Still, the general
-idea of a psychologically attractive option that most if not all people will
-notice and know that most if not all people will notice etc., is the same.
+rather than being attracted by it through or after deliberation. 
+////////////////////////////////////////////////////////////////////////////
+Semantic Meaning as Focal. Focal point reasoning, I would like to suggest,
+is fairly intuitive also for models of natural language interpretation.
+The model of pragmatic reasoning that this chapter spells out therefore rests
+on the following Focal Meaning Assumption: semantic meaning is focal
+in the sense that pragmatic deliberation —to be identified as a sequence of
+best responses— departs from semantic meaning as a psychological attraction
+point of interlocutors’ attention. In other words, the semantic meaning
+of messages is a focal point, I would propose, much like the door labeled B in
+the above ‘hide-and-seek’ game: even though strategically semantic meaning
+is not binding, it is fairly intuitive to start pondering how to use an expression
+and what might have been meant by its use by assessing first the expression’s
+semantic meaning.
+Thus conceived, the Focal Meaning Assumption is a solution to a technical
+problem —the problem how to implement semantic meaning non-bindingly
+in the solution concept for games— which has a general, independent empirical
+motivation in the psychology of reasoners. On top of that, I believe that the
+Focal Meaning Assumption is not entirely implausible for the intended purpose
+either: it is not unnatural to assume that the conventional meaning of an
+expression provides the best first clue to utterance meaning. Using rationalistic
+vocabulary we could say that, given a semantically meaningful message,
+the hearer would like to rationalize why the speaker said what he said. So,
+as a starting point of his deliberation the hearer asks himself, what he would
+do if the message was indeed true. But then he might realize that the sender
+could anticipate this response. In that case, the hearer is best advised to take
+the sender’s strategic incentives —her preferences and action alternatives—
+into consideration. Similarly, a na¨ıve sender might just say whatever is true
+at a given occasion. But with some more pragmatic sophistication she might
+reason her way up the ibr ladder where she includes her expectations of the
+receiver’s responses to her na¨ıve sending strategy. The resulting hypothetical
+reasoning on both the sender and the hearer side can be modelled as
+a sequence of iterated best responses that, crucially, takes its origin in a focal
+point constituted by semantic meaning. And this is, in bare outline, the
+solution concept that this chapter will put forward.
+/////////////////////////////////////////////////////////////////////////////////
+2.1.2 Iterated Best Response Reasoning as Pragmatic Inference
+ibr models not only help implement possible psychological reasoning biases
+in the form of focal starting points of the deliberation, but they also intend to
+capture (some of) the natural resource-bounded limitations of actual human
+reasoning. That human reasoning is bound, in a manner of speaking, to a
+finite, even narrow horizon of strategic sophistication has been demonstrated
+repeatedly in multiple laboratory experiments on strategic reasoning. In simplified
+terms, the upshot of this empirical research is that although nearly all
+subjects behave rationally in laboratory games, far fewer subjects trust the rationality
+of others when making their own decisions, even fewer people are
+certain of others’ belief in others’ rationality, and so on. What is generally
+at stake here can be appreciated also intuitively based on so-called ‘p-beauty
+contest’ games, which I will tend to presently. A subsequent look at subjects’
+reasoning in particular dynamic games will help refine the general picture.
+‘p-Beauty Contest’ Games. For a start, let’s have a look at experiments on
+so-called ‘p-beauty contest’ games, which have been tested extensively (see
+Nagel 1995; Ho et al. 1998; Camerer 2003; Camerer et al. 2004).5 In such a
+‘p-beauty contest’ each player from a group of size n > 2 chooses a number
+from zero to 100. The player closest to p times the average wins. When this
+game is played with parameter p = 2/3 by a group of subjects who have never
+played the game before, the usual group average lies somewhere between 20
+and 30, which is curiously far from the group average zero which we would
+expect from common (true) belief in rationality and which is the only Nash
+equilibrium in this game.
+The reasoning with which a player may arrive at the conclusion that zero
+is the analytically best choice in a ‘p-beauty contest’ with p = 2/3 is the following:
+a rational player will not play a number bigger than 67 because any
+such number has a lower chance of winning than exactly 67;6 but if a rational
+player believes that her opponents are rational and will therefore realize
+this much, she should not play any number higher than 2/3 × 66 = 44 by
+the same reasoning; again, a rational player who is convinced that her opponents
+are rational and believe in the rationality of others will play maximally
+2/3 × 44  29, and so on. Further iterated steps of such reasoning will lead to
+the conclusion that zero is the best choice, in fact the only choice compatible
+with common belief in rationality.
+Nonetheless, but perhaps unsurprisingly, few subjects in experimental
+plays of this game choose zero — be that the first time they play this game or
+in later rounds after having observed the behavior of other players. Rather, a
+large pool of data on these kinds of games suggests that “the typical subject
+uses only one or two steps of reasoning (starting from 50)” (Camerer 2003,
+p. 218).
+A non-zero choice is by no means a bad choice, of course. If (you believe
+that) everybody else chooses relatively high numbers, you do not want
+to choose too low a number yourself. What a number choice in this game
+actually represents is a player’s estimate of the estimate (of the estimate . . . )
+of other players: provided a player is rational, her choice will be around 2/3
+her estimated average; but that means that any choice of number other than
+zero is either irrational —which we will exclude— or indicative of a belief
+that some or most other players are a little less smart than the choosing player
+herself. What any choice other than zero therefore truly expresses is a belief
+in the relative reasoning incapabilities of others and a certain amount of overconfidence:
+bluntly put, a non-zero choice says “I think I am smarter than
+you guys are (on average).”
+In sum, ‘p-beauty contest’ games show, both experimentally and intuitively,
+a general healthy tendency of human subjects to distrust other players’
+ideal and flawless rational behavior and/or reasoning capabilities. Similar results
+have been obtained from experiments on different kinds of games. Stahl
+and Wilson (1995), for instance, tested subjects’ performance on static games
+some of which had unique solutions in either one or two steps of iterated
+strict dominance. Camerer (2003) discusses a wealth of experiments on similarly
+‘dominance-solvable’ games, amongst others variants of the centipede
+game, variants of the muddy children puzzle and the ‘electronic mail’ game
+(Rubinstein 1989). Despite the heterogeneity of the tested games, a rough and
+general conclusion —to be scrutinized presently— seems feasible: subjects’
+performance in experimental conditions drops to the extent that the tested
+choice requires higher levels of iterated reasoning. The more careful question
+we should ask though is: what exactly is the limitation in subjects’ game
+theoretic reasoning due to?
 
+Iterated Dominance in Dynamic Games. A dynamic two-player game like
+that in figure 2.1 may help shed light on this issue. In this game, first player
+player 1 continued to play initially, and finally player 1 gets another choice
+to continue or quit if player 2 decided to continue too. Clearly, if ever player
+1’s last choice point is reached she should choose to continue because that
+will give her a payoff of 4 as opposed to 2. Then, if player 2 realizes that
+player 1 will play c at her last choice point, player 2 should quit when she
+gets the chance, securing a payoff of 4 instead of 3. But then, anticipating
+player 2’s behavior, player 1 should already initially quit the game to obtain 3
+utils instead of only 1 util.
+This kind of backward induction reasoning on player 1’s part corresponds
+with her ascribing to player 2 both rationality and the belief that player
+1 will make a rational choice at her last choice point (Aumann 1995; Stalnaker
+1998). In other words, player 1 will play the prediction of backward induction,
+if she believes that (i) player 2 is rational and that (ii) player 2 believes
+that player 1 herself is rational (assuming, that is, that the game structure is
+common knowledge).
+This suggests that player 1’s initial choice, whether to continue or quit,
+is diagnostic of the depth of strategic reasoning that player 1 is capable of,
+including the depth of strategic reasoning that player 1 is able to ascribe to
+player 2. Hedden and Zhang (2002) indeed argue that player 1’s initial choice
+is indicative in particular of whether player 1 is using first- or second-order
+Theory of Mind reasoning (tom reasoning) (Premack and Woodruff 1978):
+according to common classification, zeroth-order tom reasoning is reasoning
+that takes into account one’s own desires and beliefs about the state of
+the world only, first-order tom reasoning takes into account others’ desires
+and (zeroth-order) beliefs, and (n + 1)-th-order tom reasoning takes into account
+others’ desires and n-th-order beliefs. According to Hedden and Zhang,
+player 1’s initial choice to continue is indicative of her using first-order theory
+of mind:7 if player 1 does not reason about player 2’s first-order theory, she
+must think that player 2 is a zeroth-level reasoner who does not take player
+1’s incentives into account, and therefore, Hedden and Zhang assume, a firstorder
+player 1 will assume that player 2 will choose to continue, hoping for an
+average payoff of 41/2 . On the other hand, if player 1 uses second-order tom
+reasoning she will choose to quit initially, as predicted by backward induction
+and its above epistemic justification.
+Hedden and Zhang conclude based on their experimental data that most
+subjects initially only apply first-order tom reasoning, and only later possibly
+advance to second-order tom reasoning when playing against a first-order
+confederate player 2. It is not essential to discuss the soundness of this conclusion
+in minute detail. It suffices to note that the conclusion as such is in line
+with the bulk of research on dominance-solvable games: subjects are capable
+of one or two levels of iterated reasoning. Hedden and Zhang then suggest
+that this may be due to a lack of tom reasoning capability. For clarity, this is a
+thesis opposed to the idea that subjects, for instance, lack trust in rationality.
+To say, as Hedden and Zhang do, that subjects lack the conceptual grasp or
+the computational resources necessary for higher-order tom reasoning is different
+from saying that belief in (belief in. . . ) rationality is waning proportional
+to the depth of nesting of belief in rationality. Which position is correct, or
+whether even both are or neither is, is a matter for more refined empirical
+research that this thesis does not contribute to, unfortunately. Although the
+model I will present in this chapter is, as far as I can see, compatible with both
+explanations of human reasoning limitations in dominance solvable games, I
+will adopt Hedden and Zhang’s idea that it is general tom reasoning that is
+difficult —either to grasp or perform— and not so much faith in rationality
+that is lacking.8
+///////////////////////////////////////////////////
+                                    2.1.3 Strategic-Type Models
