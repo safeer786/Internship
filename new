@@ -1,1 +1,11 @@
-sadasd
+Focal points and iterated best response
+to understand iterated best response with focal point consider the following exampl:
+lets suppose we have a game of hide and seek 4 doors one is the winning door and rest three are looser so seeker wins if the hider looses so we 
+have a probability of 25% of a door being selected at random by hider and by seeker.
+Now if we take a look at the image again we see that the doors linear arangment and the labeling have an effect of the human reasoning which is called NON-NUTRAL PSYCOLOGICAL EFFECT by behavioural game theorist.
+And when Rubinstien in 1996 put this to test the results were quite different as shown below.
+These results can be explained by Iterated Best Response(IBR).
+IBR have two assumptions:
+1) There are focal points in the presentation of game that attract the attention of the reasoners before they engage in the further streagic delibration.
+2) They compute best response to focal point behaviour (if they can) to which they compute best respone and so on.
+
