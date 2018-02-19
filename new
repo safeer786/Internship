@@ -22,14 +22,11 @@ reasoners might convince themselves that playing a focal strategy is not a good
 idea. In other words, reasoners may reason themselves away from focality,
 rather than being attracted by it through or after deliberation. 
 ////////////////////////////////////////////////////////////////////////////
-Semantic Meaning as Focal. Focal point reasoning, I would like to suggest,
+Semantic Meaning as Focal. Focal point reasoning 
 is fairly intuitive also for models of natural language interpretation.
-The model of pragmatic reasoning that this chapter spells out therefore rests
-on the following Focal Meaning Assumption: semantic meaning is focal
-in the sense that pragmatic deliberation —to be identified as a sequence of
-best responses— departs from semantic meaning as a psychological attraction
-point of interlocutors’ attention. In other words, the semantic meaning
-of messages is a focal point, I would propose, much like the door labeled B in
+The model of pragmatic reasoning  rests
+on the following Focal Meaning Assumption: the semantic meaning
+of messages is a focal point, much like the door labeled B in
 the above ‘hide-and-seek’ game: even though strategically semantic meaning
 is not binding, it is fairly intuitive to start pondering how to use an expression
 and what might have been meant by its use by assessing first the expression’s
@@ -60,19 +57,11 @@ solution concept that this chapter will put forward.
 ibr models not only help implement possible psychological reasoning biases
 in the form of focal starting points of the deliberation, but they also intend to
 capture (some of) the natural resource-bounded limitations of actual human
-reasoning. That human reasoning is bound, in a manner of speaking, to a
-finite, even narrow horizon of strategic sophistication has been demonstrated
-repeatedly in multiple laboratory experiments on strategic reasoning. In simplified
-terms, the upshot of this empirical research is that although nearly all
-subjects behave rationally in laboratory games, far fewer subjects trust the rationality
-of others when making their own decisions, even fewer people are
-certain of others’ belief in others’ rationality, and so on. What is generally
-at stake here can be appreciated also intuitively based on so-called ‘p-beauty
+reasoning. . What is generally
+at stake can be appreciated also intuitively based on so-called ‘p-beauty
 contest’ games, which I will tend to presently. A subsequent look at subjects’
 reasoning in particular dynamic games will help refine the general picture.
-‘p-Beauty Contest’ Games. For a start, let’s have a look at experiments on
-so-called ‘p-beauty contest’ games, which have been tested extensively (see
-Nagel 1995; Ho et al. 1998; Camerer 2003; Camerer et al. 2004).5 In such a
+‘p-Beauty Contest’ Games.  In such a
 ‘p-beauty contest’ each player from a group of size n > 2 chooses a number
 from zero to 100. The player closest to p times the average wins. When this
 game is played with parameter p = 2/3 by a group of subjects who have never
