@@ -34,7 +34,7 @@ semantic meaning.
 Thus conceived, the Focal Meaning Assumption is a solution to a technical
 problem —the problem how to implement semantic meaning non-bindingly
 in the solution concept for games— which has a general, independent empirical
-motivation in the psychology of reasoners. On top of that, I believe that the
+motivation in the psychology of reasoners. On top of that
 Focal Meaning Assumption is not entirely implausible for the intended purpose
 either: it is not unnatural to assume that the conventional meaning of an
 expression provides the best first clue to utterance meaning. Using rationalistic
@@ -44,14 +44,13 @@ as a starting point of his deliberation the hearer asks himself, what he would
 do if the message was indeed true. But then he might realize that the sender
 could anticipate this response. In that case, the hearer is best advised to take
 the sender’s strategic incentives —her preferences and action alternatives—
-into consideration. Similarly, a na¨ıve sender might just say whatever is true
+into consideration but a naive sender might just say whatever is true
 at a given occasion. But with some more pragmatic sophistication she might
 reason her way up the ibr ladder where she includes her expectations of the
-receiver’s responses to her na¨ıve sending strategy. The resulting hypothetical
+receiver’s responses to her naive sending strategy. The resulting hypothetical
 reasoning on both the sender and the hearer side can be modelled as
 a sequence of iterated best responses that, crucially, takes its origin in a focal
-point constituted by semantic meaning. And this is, in bare outline, the
-solution concept that this chapter will put forward.
+point constituted by semantic meaning.
 /////////////////////////////////////////////////////////////////////////////////
 2.1.2 Iterated Best Response Reasoning as Pragmatic Inference
 ibr models not only help implement possible psychological reasoning biases
@@ -132,24 +131,14 @@ prejudices and beliefs about the belief formation and behavior of their opponent
 For ease of exposition though, I will first spell out a vanilla version of
 the ibr model without such extra assumptions.
 2.2.1 Strategic Types and the IBR Sequence
-Before plunging into the definitions of strategic types, a word of caution is
-in order. Since the ibr model defines player types in terms of beliefs about
-opponent behavior,if we denote (i) a sender of strategic level k as an
+if we denote (i) a sender of strategic level k as an
 abstract entity defined by the ibr model, but also (ii) the set of pure strategies
 representing the unbiased belief of Rk+1 in his opponent’s behavior.
-and have a 
-Level-Zero Players. S0 plays an arbitrary truthful
-sender strategy. A pure sender strategy s is truthful iff t 2 [[s(t)]] for all t.
-S0 = {s 2 S | 8t 2 T : t 2 [[s(t)]]} .
-and R0 plays an arbitrary strategy that is rational
-given a literal. A literal
-interpretation is a posterior belief μ0(·|m) = Pr(·| [[m]]) which results from
-updating the prior beliefs with the semantic meaning of the observed message.
-In general, if d 2 D(X) is a probability distribution over set X, then
-the conditional probability of event Y  X conditional on event Z  X is
-calculated by Bayesian update:
-d(Y|Z) = d(Y \ Z)
-d(Z)
+and have a Level-Zero Players and plays an arbitrary truthful
+sender strategy and R0 plays an arbitrary strategy that is rational
+given a literal which results from updating the prior beliefs with the semantic meaning of the observed message.
+we can calculate the probability by Bayesian update:
+d(Y|Z) = d(Y \ Z)/d(Z)
 so a
 level-zero receiver considers the semantic meaning of an observed message,
 but does not take his opponent’s strategy into account.
@@ -157,34 +146,16 @@ Unbiased Beliefs. In the vanilla version of the ibr model, player types of
 level k + 1 are simply defined as best responding to unbiased beliefs that their
 opponent is a level-k player, without any further restrictions on these beliefs
 
-Higher Level Types. With this notational convention, the definition of the
-ibr sequence becomes very simple: Sk+1 has an unbiased belief that she is
+Higher Level Types.  Sk+1 has an unbiased belief that she is
 facing Rk, so —with full use of loose typing— Rk simply is Sk+1’s belief of her
-opponents behavior. Her own rational behavior is then defined as:
-Sk+1 = BR(Rk).
-For the receiver the situation is only slightly more complicated. If there are
-surprise messages under the belief Sk, then an unbiased receiver belief in a
-set of sender strategies Sk does not necessarily yield a single unique posterior
-μ consistent with Sk to which the receiver could best respond.10 The vanilla
-ibr model is simply unrestricted here and says that Rk+1 will adopt any posterior
-μ which is consistent with the belief Sk. So, formally, let PRk+1 be the
-set of all triples hPr, Sk, μi such that μ is consistent with Sk and define:
-Rk+1 = BR(PRk+1).
+opponents behavior.
 The vanilla ibr model consequently predicts that if m is a surprise message
 given belief in Sk, then Rk+1 will respond to m with any action that is zero-order
-rationalizable in the play after m, i.e., rational for some belief d 2 D(T) about
-which state is actual. 
+rationalizable in the play.
 Limit Prediction. The ibr model defines an infinite sequence of ever more
 sophisticated players. It is important to stress that the ibr model is not an
 equilibrium solution concept, and that the behavior of boundedly rational
 types belongs to its predictions even though such behavior may fall short of
 the idealized predictions under common belief in rationality.
 Nonetheless, the ibr model also makes predictions about unbounded tom
-reasoners, so to speak. To see this, notice first of all that for finite T and
-M the ibr sequence always enters a cycle after some k 2 N: since there are
-only finitely many pure sender strategies for finite sets T and M, there are
-also only finitely many sets of such strategies; and since Rk+1 is completely
-determined for a given Sk, the ibr sequence is bound to repeat itself. In a
-sense, we could consider the limit behavior of the ibr sequence, i.e., the set of
-all pure sender and receiver strategies that are repeated infinitely often, as the
-model’s abstract prediction of idealized pragmatic reasoning. 
+reasoners.
