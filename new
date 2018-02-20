@@ -57,61 +57,14 @@ solution concept that this chapter will put forward.
 ibr models not only help implement possible psychological reasoning biases
 in the form of focal starting points of the deliberation, but they also intend to
 capture (some of) the natural resource-bounded limitations of actual human
-reasoning. . What is generally
-at stake can be appreciated also intuitively based on so-called ‘p-beauty
-contest’ games, which I will tend to presently. A subsequent look at subjects’
-reasoning in particular dynamic games will help refine the general picture.
-‘p-Beauty Contest’ Games.  In such a
-‘p-beauty contest’ each player from a group of size n > 2 chooses a number
-from zero to 100. The player closest to p times the average wins. When this
-game is played with parameter p = 2/3 by a group of subjects who have never
-played the game before, the usual group average lies somewhere between 20
-and 30, which is curiously far from the group average zero which we would
+reasoning for example in a game of beauty contest  each player from a group of size n > 2 chooses a number
+from zero to 100. The player closest to p times the average wins. if this game is played with the people who have never played this game before with p=2/3 average lies somewhere between 20
+and 30, which is quite far from the group average zero which we would
 expect from common (true) belief in rationality and which is the only Nash
-equilibrium in this game.
-The reasoning with which a player may arrive at the conclusion that zero
-is the analytically best choice in a ‘p-beauty contest’ with p = 2/3 is the following:
-a rational player will not play a number bigger than 67 because any
-such number has a lower chance of winning than exactly 67;6 but if a rational
-player believes that her opponents are rational and will therefore realize
-this much, she should not play any number higher than 2/3 × 66 = 44 by
-the same reasoning; again, a rational player who is convinced that her opponents
-are rational and believe in the rationality of others will play maximally
-2/3 × 44  29, and so on. Further iterated steps of such reasoning will lead to
-the conclusion that zero is the best choice, in fact the only choice compatible
-with common belief in rationality.
-Nonetheless, but perhaps unsurprisingly, few subjects in experimental
-plays of this game choose zero — be that the first time they play this game or
-in later rounds after having observed the behavior of other players. Rather, a
-large pool of data on these kinds of games suggests that “the typical subject
-uses only one or two steps of reasoning (starting from 50)” (Camerer 2003,
-p. 218).
-A non-zero choice is by no means a bad choice, of course. If (you believe
-that) everybody else chooses relatively high numbers, you do not want
-to choose too low a number yourself. What a number choice in this game
-actually represents is a player’s estimate of the estimate (of the estimate . . . )
-of other players: provided a player is rational, her choice will be around 2/3
-her estimated average; but that means that any choice of number other than
-zero is either irrational —which we will exclude— or indicative of a belief
-that some or most other players are a little less smart than the choosing player
-herself. What any choice other than zero therefore truly expresses is a belief
-in the relative reasoning incapabilities of others and a certain amount of overconfidence:
-bluntly put, a non-zero choice says “I think I am smarter than
-you guys are (on average).”
-In sum, ‘p-beauty contest’ games show, both experimentally and intuitively,
-a general healthy tendency of human subjects to distrust other players’
-ideal and flawless rational behavior and/or reasoning capabilities. Similar results
-have been obtained from experiments on different kinds of games. Stahl
-and Wilson (1995), for instance, tested subjects’ performance on static games
-some of which had unique solutions in either one or two steps of iterated
-strict dominance. Camerer (2003) discusses a wealth of experiments on similarly
-‘dominance-solvable’ games, amongst others variants of the centipede
-game, variants of the muddy children puzzle and the ‘electronic mail’ game
-(Rubinstein 1989). Despite the heterogeneity of the tested games, a rough and
-general conclusion —to be scrutinized presently— seems feasible: subjects’
-performance in experimental conditions drops to the extent that the tested
-choice requires higher levels of iterated reasoning. The more careful question
-we should ask though is: what exactly is the limitation in subjects’ game
+equilibrium in this game. Reason of yero being the best choise is that rational player would not take number greater than 67 (2/3 *100) and if he thinks about the other players might think the same so might take 2/3*66  and this keeps on happening until it is zero.
+The choice of non-zero by a rational person would indicate overconfidence.
+this shows a general healthy tendency of human subjects to distrust other players’
+ideal and flawless rational behavior and/or reasoning capabilities. what exactly is the limitation in subjects’ game
 theoretic reasoning due to?
 
 Iterated Dominance in Dynamic Games. A dynamic two-player game like
@@ -126,49 +79,75 @@ player 2’s behavior, player 1 should already initially quit the game to obtain
 utils instead of only 1 util.
 This kind of backward induction reasoning on player 1’s part corresponds
 with her ascribing to player 2 both rationality and the belief that player
-1 will make a rational choice at her last choice point (Aumann 1995; Stalnaker
-1998). In other words, player 1 will play the prediction of backward induction,
-if she believes that (i) player 2 is rational and that (ii) player 2 believes
-that player 1 herself is rational (assuming, that is, that the game structure is
-common knowledge).
-This suggests that player 1’s initial choice, whether to continue or quit,
-is diagnostic of the depth of strategic reasoning that player 1 is capable of,
-including the depth of strategic reasoning that player 1 is able to ascribe to
-player 2. Hedden and Zhang (2002) indeed argue that player 1’s initial choice
-is indicative in particular of whether player 1 is using first- or second-order
-Theory of Mind reasoning (tom reasoning) (Premack and Woodruff 1978):
-according to common classification, zeroth-order tom reasoning is reasoning
-that takes into account one’s own desires and beliefs about the state of
-the world only, first-order tom reasoning takes into account others’ desires
-and (zeroth-order) beliefs, and (n + 1)-th-order tom reasoning takes into account
-others’ desires and n-th-order beliefs. According to Hedden and Zhang,
-player 1’s initial choice to continue is indicative of her using first-order theory
-of mind:7 if player 1 does not reason about player 2’s first-order theory, she
-must think that player 2 is a zeroth-level reasoner who does not take player
-1’s incentives into account, and therefore, Hedden and Zhang assume, a firstorder
-player 1 will assume that player 2 will choose to continue, hoping for an
-average payoff of 41/2 . On the other hand, if player 1 uses second-order tom
-reasoning she will choose to quit initially, as predicted by backward induction
-and its above epistemic justification.
-Hedden and Zhang conclude based on their experimental data that most
-subjects initially only apply first-order tom reasoning, and only later possibly
-advance to second-order tom reasoning when playing against a first-order
-confederate player 2. It is not essential to discuss the soundness of this conclusion
-in minute detail. It suffices to note that the conclusion as such is in line
-with the bulk of research on dominance-solvable games: subjects are capable
-of one or two levels of iterated reasoning. Hedden and Zhang then suggest
-that this may be due to a lack of tom reasoning capability. For clarity, this is a
-thesis opposed to the idea that subjects, for instance, lack trust in rationality.
-To say, as Hedden and Zhang do, that subjects lack the conceptual grasp or
-the computational resources necessary for higher-order tom reasoning is different
-from saying that belief in (belief in. . . ) rationality is waning proportional
-to the depth of nesting of belief in rationality. Which position is correct, or
-whether even both are or neither is, is a matter for more refined empirical
-research that this thesis does not contribute to, unfortunately. Although the
-model I will present in this chapter is, as far as I can see, compatible with both
-explanations of human reasoning limitations in dominance solvable games, I
-will adopt Hedden and Zhang’s idea that it is general tom reasoning that is
-difficult —either to grasp or perform— and not so much faith in rationality
-that is lacking.8
+1 will make a rational choice at her last choice point.
 ///////////////////////////////////////////////////
                                     2.1.3 Strategic-Type Models
+In order to capture the idea that human reasoning is at the same time bounded
+in the number of analytical steps and overconfident in assuming that others
+can be outperformed, several behavioral game theorists have postulated models featuring different strategic types of players (Stahl 1993; Stahl and Wilson
+1995; Holt 1999; Crawford 2003; Camerer et al. 2004). Detailed differences in
+models notwithstanding, a strategic type captures the level of sophistication
+of a player and corresponds to the number of steps that the agent is able to
+(and/or in fact does) compute in a sequence of iterated best responses. This
+number of steps is bounded above by the maximal order of tom reasoning
+that the agent is capable of. It is then the set of all such strategic types, with
+their beliefs and behavior, that forms the prediction of a strategic-type model.
+Such strategic-type models are good predictors of experimental data, because
+they are often simpler than competing theories (involving fewer parameters),
+and more generally applicable at equal econometric fit (see Camerer
+2003; Camerer et al. 2004; Crawford and Iriberri 2007). Additionally, these
+models are also conceptually appealing for several reasons. First of all, these
+models allow the implementation of focal points in a natural manner as starting
+points of strategic reasoning. Moreover, strategic type models take seriously
+the natural resource boundedness of tom reasoning, as demonstrated
+in the last section. The advantage of this is that a strategic type model, as
+an analytic solution concept, also yields predictions about boundedly rational
+behavior that possibly falls short of the classical game theoretic ideals of
+equilibrium or (play consistent with) common belief in rationality.
+In the following section I will propose a model of strategic types of senders
+and receivers in signaling games. The assumption that semantic meaning is
+focal cashes out in the stipulation of level-zero players that do not engage
+in strategic reasoning at all: they are blind to their opponent’s strategy and
+preferences, and only take into account the semantic meaning of messages.
+In particular, a level-zero sender would like to send arbitrarily any message
+that is true; similarly a level-zero receiver would simply believe all messages
+literally. Given a specification of level-zero players, we can define the behavior
+of level-(k + 1) players by induction. A level-(k + 1) player believes that his
+opponent is a level-k player and will play a best response to this belief.
+2.2 The Vanilla Model
+Recall from the previous chapter that a signaling game (with meaningful signals)
+is a tuple
+h{S, R} , T, Pr,M, [[·]] , A,US,URi
+where sender S and receiver R are the players of the game; T is a set of
+states; Pr 2 D(T) is a probability distribution over T with full support; M
+is a set of messages that the sender can send; [[·]] : M ! P(T) gives the
+semantic meaning of a message; A is the set of receiver actions; and US,R :
+T × M× A ! R are utility functions for both sender and receiver.
+Generally speaking, the ibr model proposed here defines strategic types
+of players in terms of their beliefs about the opponent’s behavior. More concretely,
+a level-(k + 1) player believes that she is playing against a rational
+level-k opponent. That is to say that I will assume here that each higher level
+player believes that she is exactly one level more sophisticated than her opponent.
+9 Additionally to that we may allow level-(k + 1) players to have further
+prejudices and beliefs about the belief formation and behavior of their opponents.
+For ease of exposition though, I will first spell out a vanilla version of
+the ibr model without such extra assumptions.
+2.2.1 Strategic Types and the IBR Sequence
+Before plunging into the definitions of strategic types, a word of caution is
+in order. Since the ibr model defines player types in terms of beliefs about
+opponent behavior, the notation I will use is strictly —but harmlessly— ambiguous:
+Sk, for instance, will denote both (i) a sender of strategic level k as an
+abstract entity defined by the ibr model, but also (ii) the set of pure strategies
+representing the unbiased belief (see below) of Rk+1 in his opponent’s behavior.
+Analogously, of course, for Rk and Sk+1.
+Level-Zero Players. The beginning of the ibr sequence is defined by types
+who adhere strongly to ‘semantics only’ in line with the Focal Meaning Assumption
+argued for above. I will assume that S0 plays an arbitrary truthful
+sender strategy. A pure sender strategy s is truthful iff t 2 [[s(t)]] for all t.
+Hence, let S0 be the set of all truthful sender strategies:
+S0 = {s 2 S | 8t 2 T : t 2 [[s(t)]]} .
+Additionally, I will assume that R0 plays an arbitrary strategy that is rational
+given a literal, semantic interpretation of the receiver message. A literal
+interpretation is a posterior belief μ0(·|m) = Pr(·| [[m]]) which results from
+updating the prior beliefs with the semantic meaning of the observed message.
+In general, if d 2 D(X) is a probability distribution over set X, then
