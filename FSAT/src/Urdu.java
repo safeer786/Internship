@@ -41,6 +41,7 @@ public class Urdu {
 		finalstates.add("qvmp");
 		FST.final_states(finalstates);
 	}
+	//universal dependicies treebank
     //beautiful خوبصورت clever ہوشیار intelligent ذہین 
 	void build_adjectives_nutral()
 	{
@@ -68,20 +69,123 @@ public class Urdu {
 		finalstates.add("qadmp");
 		FST.final_states(finalstates);
 	}
+	
+	void build_adverbs_nutral()
+	{
+		FST.Add("q1", "خوبصورتی", "qav", 0.0, "+Adverb+");
+		
+		List<String> finalstates = new ArrayList<String>();
+		finalstates.add("qav");
+		FST.final_states(finalstates);
+	}
 	//prepositions
 	void build_preposition()
 	{
 		FST.Add("q1", "ساتھ", "qpp", 0.0, "+pp+");
 		FST.Add("q1", "قریب", "qpp", 0.0, "+pp+");
 		FST.Add("q1", "تک", "qpp", 0.0, "+pp+");
-		FST.Add("q2", "مگر", "qpp", 0.0, "+pp+");
-		FST.Add("q2", "سے", "qpp", 0.0, "+pp+");
-		FST.Add("q2", "کو", "qpp", 0.0, "+pp+");
+		FST.Add("q1", "مگر", "qpp", 0.0, "+pp+");
+		FST.Add("q1", "سے", "qpp", 0.0, "+pp+");
+		FST.Add("q1", "کو", "qpp", 0.0, "+pp+");
 		List<String> finalstates = new ArrayList<String>();
 		finalstates.add("qpp");
 	    FST.final_states(finalstates);
 	}
-
+	//present tense
+	void build_present()
+	{
+		FST.Add("q1", "ہے", "qpt", 0.0, "+male/female sg present+");
+		FST.Add("q1", "ہیں", "qpt", 0.0, "+male/female pl present+");
+		List<String> finalstates = new ArrayList<String>();
+		finalstates.add("qpt");
+	    FST.final_states(finalstates);
+	}
+	//future tense
+	void build_future()
+	{
+		FST.Add("q1", "ہو", "qf", 0.0, "+future+");
+		FST.Add("qf", "گا", "qf1", 0.0, "+male sg+");
+		FST.Add("qf", "گی", "qf2", 0.0, "+female sg/pl +");
+		FST.Add("qf", "نگے", "qf3", 0.0, "+male pl+");
+		List<String> finalstates = new ArrayList<String>();
+		finalstates.add("qf1");
+	    finalstates.add("qf2");
+		finalstates.add("qf3");
+		FST.final_states(finalstates);
+	}
+	//future tense
+		void build_past()
+		{
+			FST.Add("q1", "تھ", "qpst", 0.0, "+past+");
+			FST.Add("qpst", "ا", "qpstf1", 0.0, "+male sg+");
+			FST.Add("qpst", "ی", "qpstf2", 0.0, "+female sg +");
+			FST.Add("qpst", "ے", "qpstf3", 0.0, "+male pl+");
+			FST.Add("qpst", "یں", "qpstf4", 0.0, "+female pl+");
+			List<String> finalstates = new ArrayList<String>();
+			finalstates.add("qpstf1");
+		    finalstates.add("qpstf2");
+			finalstates.add("qpstf3");
+			finalstates.add("qpstf4");
+			FST.final_states(finalstates);
+		}
+		void sbj_obj(List<List<String>> sen,String[] arr)
+		{
+			int index=arr.length;
+			int check=0;
+			for(int i=0;i<sen.size();i++)
+			{
+				List <String> temp=sen.get(i);
+				index--;
+				for(int j=0;j<temp.size();j++)
+				{
+					String a=temp.get(j);
+					if(a.contains("noun") && check==0)
+					{
+						System.out.println("Subject : " + arr[index] + a  );
+						check=1;
+					}
+					else if(a.equals("noun") && check==1)
+					{
+						System.out.println("Object : " + arr[index]  );
+					}
+					else
+					{
+						;
+					}
+				}
+				
+			}
+			
+		}
+		
+		void check_sentence(List<List<String>> sen,String subject)
+		{
+			int index=2;
+			int check=0;
+			for(int i=0;i<sen.size();i++)
+			{
+				List <String> temp=sen.get(i);
+				index--;
+				for(int j=0;j<temp.size();j++)
+				{
+					String a=temp.get(j);
+					if(a.contains("noun") && check==0)
+					{
+				//		System.out.println("Subject : " + arr[index]  );
+						check=1;
+					}
+					else if(a.equals("noun") && check==1)
+					{
+			//			System.out.println("Object : " + arr[index]  );
+					}
+					else
+					{
+						;
+					}
+				}
+				
+			}
+		}
 	//
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
@@ -91,10 +195,25 @@ public class Urdu {
 		u.build_adjectives_nutral();
 		u.build_preposition();
 		u.build_verbs();
+		u.build_adverbs_nutral();
+		u.build_future();
+		u.build_past();
+		u.build_present();
 		List<String> outp = new ArrayList<String>();
-		outp=u.FST.upfinal("کھاتی");
-		String sentence="کھاتی کتیاں";
-		String word="کھاتی";
+		outp=u.FST.upfinal("خوبصورتی");
+		System.out.println(outp);
+		System.out.println("with present past and future simple tense");
+		System.out.println("لڑکی خوبصورت ہے" + "girl is beautiful");
+		System.out.println("لڑکیاں کھاتی ہیں" + "girls eat");
+		System.out.println("لڑکیاں کھاتی تھیں" + "girls used to eat");
+		
+		List<String> sentences=new ArrayList<String>();
+		sentences.add("لڑکی خوبصورت ہے");
+		sentences.add("لڑکیاں کھاتی ہیں");
+		sentences.add("لڑکیاں کھاتی تھیں");
+		for(int sent=0;sent<sentences.size();sent++)
+		{String sentence=sentences.get(sent);
+		
 		String[] arr = sentence.split(" ");
 		List<List<String>> sen=new ArrayList<List<String>>();
 		for(int i=arr.length-1;i>=0;i--)
@@ -103,16 +222,19 @@ public class Urdu {
 			outp=u.FST.upfinal(arr[i]);
 			sen.add(outp);
 		}
-		int i=0;
+		int i=arr.length-1;
 		for(int j=0;j<sen.size();j++)
 		{
-			System.out.println(arr[j]);
+			System.out.println(arr[i]);
 			List<String> temp=sen.get(j);
 	//	for (int i = 0; i < temp.size(); i++) {
 			System.out.println(temp.get(0));
+			i--;
 	//	}
 		}
-
+		
+		u.sbj_obj(sen, arr);
+		}
 	}
 
 }
