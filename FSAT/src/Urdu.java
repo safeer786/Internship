@@ -113,6 +113,34 @@ public class Urdu {
 		finalstates.add("qf3");
 		FST.final_states(finalstates);
 	}
+	//perfect
+	void build_perfect()
+	{
+		FST.Add("q1", "چکا", "qperf1", 0.0, "+perfect male sg+");
+		FST.Add("q1", "چکی", "qperf2", 0.0, "+perfect female sg+");
+		FST.Add("q2", "چکے", "qperf3", 0.0, "+perfect male pl+");
+		FST.Add("q3", "چکیں", "qperf4", 0.0, "+perfect female pl+");
+		List<String> finalstates = new ArrayList<String>();
+		finalstates.add("qperf1");
+	    finalstates.add("qperf2");
+		finalstates.add("qperf3");
+		finalstates.add("qperf4");
+		FST.final_states(finalstates);
+	}
+	//continuous
+	void build_continuous()
+	{
+		FST.Add("q1", "راھا", "qcon1", 0.0, "+continuous male sg+");
+		FST.Add("q1", "راھی", "qcon2", 0.0, "+continuous female sg+");
+		FST.Add("q2", "راھے", "qcon3", 0.0, "+continuous male pl+");
+		FST.Add("q3", "راھیں", "qcon4", 0.0, "+continuous female pl+");
+		List<String> finalstates = new ArrayList<String>();
+		finalstates.add("qcon1");
+	    finalstates.add("qcon2");
+		finalstates.add("qcon3");
+		finalstates.add("qcon4");
+		FST.final_states(finalstates);
+	}	
 	//future tense
 		void build_past()
 		{
@@ -199,6 +227,8 @@ public class Urdu {
 		u.build_future();
 		u.build_past();
 		u.build_present();
+		u.build_perfect();
+		u.build_continuous();
 		List<String> outp = new ArrayList<String>();
 		outp=u.FST.upfinal("خوبصورتی");
 		System.out.println(outp);
