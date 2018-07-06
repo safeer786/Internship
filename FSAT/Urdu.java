@@ -95,10 +95,13 @@ public class Urdu {
 	//present tense
 	void build_present()
 	{
-		FST.Add("q1", "ہے", "qpt", 0.0, "+male/female sg present+");
-		FST.Add("q1", "ہیں", "qpt", 0.0, "+male/female pl present+");
+		FST.Add("q1", "ہے", "qpt1", 0.0, "+male/female sg present+");
+		FST.Add("q1", "ہیں", "qpt2", 0.0, "+male/female pl present+");
+		FST.Add("q1", "ہوں", "qpt3", 0.0, "+male/female sg present+");
 		List<String> finalstates = new ArrayList<String>();
-		finalstates.add("qpt");
+		finalstates.add("qpt1");
+		finalstates.add("qpt2");
+		finalstates.add("qpt3");
 	    FST.final_states(finalstates);
 	}
 	//future tense
