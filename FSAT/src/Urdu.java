@@ -203,6 +203,12 @@ public class Urdu {
 		outp=u.FST.upfinal("خوبصورتی");
 		System.out.println(outp);
 		System.out.println("with present past and future simple tense");
+		System.out.println("noun");
+		System.out.println("boy لڑکا girl لڑکی boys لڑکے girls لڑکیاں kid(female) بچی kid(male) بچہ  kids(male) بچے kids(female) بچیاں dog کتا bitch کتی	dogs کتے bitches  کتیاں");
+		System.out.println("verb");
+		System.out.println("eating کھانا playing کھیلنا doing کرنا going جا");
+		System.out.println("adjective");		
+		System.out.println("beautiful خوبصورت clever ہوشیار intelligent ذہین nice اچها sweet پیارا fat موتا slim پتلا");
 		System.out.println("لڑکی خوبصورت ہے" + "girl is beautiful");
 		System.out.println("لڑکیاں کھاتی ہیں" + "girls eat");
 		System.out.println("لڑکیاں کھاتی تھیں" + "girls used to eat");
