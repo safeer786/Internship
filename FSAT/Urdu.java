@@ -39,6 +39,7 @@ public class Urdu {
 		finalstates.add("qvms");
 	    finalstates.add("qvf");
 		finalstates.add("qvmp");
+		finalstates.add("qv");
 		FST.final_states(finalstates);
 	}
 	//universal dependicies treebank
@@ -242,11 +243,12 @@ public class Urdu {
 		System.out.println("لڑکی خوبصورت ہے" + "girl is beautiful");
 		System.out.println("لڑکیاں کھاتی ہیں" + "girls eat");
 		System.out.println("لڑکیاں کھاتی تھیں" + "girls used to eat");
-		
+		System.out.println("لڑکا جا راھا ہے" + "boy is going");
 		List<String> sentences=new ArrayList<String>();
 		sentences.add("لڑکی خوبصورت ہے");
 		sentences.add("لڑکیاں کھاتی ہیں");
 		sentences.add("لڑکیاں کھاتی تھیں");
+		sentences.add("لڑکا جا راھا ہے");
 		for(int sent=0;sent<sentences.size();sent++)
 		{String sentence=sentences.get(sent);
 		
